@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>New York - One Page Portfolio &amp; Business Theme - Documentation</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- Add your fonts here -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+        
+        <!-- Add your CSS here -->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>New York - One Page Portfolio &amp; Business Theme<br>Theme Documentation</h1>
+            
+            <div>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#" data-scroll="changeimages">1. Change Images</a></li>
+                        <li><a href="#" data-scroll="changeicons">2. Change Icons</a></li>
+                        <li><a href="#" data-scroll="plugins">3. Plugins</a></li>
+                        <li><a href="#" data-scroll="team">4. Team Section</a></li>
+                        <li><a href="#" data-scroll="gallery">5. Work Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="content">  
+                <section id="changeimages" data-anchor="changeimages">
+                    <h2>How to change Images</h2>
+                    <h3 class="subheading">Welcome Section</h3>
+                    <ol>
+                        <li>Go to the css Folder</li>
+                        <li>Open style.css</li>
+                        <li>Find section "welcome"</li>
+                        <li>Change the Background-Image "../img/welcome-bg.jpg"</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Work Gallery</h3>
+                    <h4>Thumbnails</h4>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "work"</li>
+                        <li>Go to the image you want to change</li>
+                        <li>Find the Thumbnail-Image source e.g. "img/gallery/thumbs/1.jpg"</li>
+                        <li>Change your Image</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+                    <h4>Bigger Images</h4>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "work"</li>
+                        <li>Go to the image you want to change</li>
+                        <li>Find the data-largesrc Attribute of your Image e.g. "data-largesrc="img/gallery/1.jpg"</li>
+                        <li>Change your Image</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <div class="info">Information: <a href="#" class="galleryscroll" data-scroll="gallery" title="How to change gallery data">How to change gallery data</a></div>
+
+                    <h3 class="subheading">Team Section</h3>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "team"</li>
+                        <li>Go to the image you want to change</li>
+                        <li>Find the Image source e.g. "img/team/1.jpg"</li>
+                        <li>Change your Image</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Contact Section</h3>
+                    <ol>
+                        <li>Go to the css Folder</li>
+                        <li>Open style.css</li>
+                        <li>Find Class .contact</li>
+                        <li>Change the Background-Image "../img/contact-bg.jpg"</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                </section>
+
+                <section id="changeicons" data-anchor="changeicons">
+                    <h2>How to change Icons</h2>
+                    <div class="info">Further Information: <a href="IconFontUsage/index.html" title="How to use your Icon-Font">How to use your Icon-Font »</a></div>
+                    <h3 class="subheading">Welcome Section</h3>
+                    <ol>
+                        <li>Go to the css Folder</li>
+                        <li>Open style.css</li>
+                        <li>Find Class .startbtn:before</li>
+                        <li>Change the Content Icon e.g. '\E050'</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Team Section</h3>
+                    <h4>Social Icons</h4>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "team"</li>
+                        <li>Go to the Teammember you want to change</li>
+                        <li>Change the Social Icon e.g. "&amp;#xe0f6;"</li>
+                        <li>Change the anchor link</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h4>Skills Icons</h4>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "team"</li>
+                        <li>Go to the Teammember you want to change</li>
+                        <li>Change the Social Icon e.g. "&amp;#xe0f6;"</li>
+                        <li>Change the anchor link</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Service Section</h3>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "service"</li>
+                        <li>Go to the Service you want to change</li>
+                        <li>Change the Icon e.g. "&amp;#xe005;"</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Contact Section</h3>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "contact"</li>
+                        <li>Change the Icon class of the social icon spans e.g. "class="icon-facebook"</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                </section>
+
+                <section id="plugins" data-anchor="plugins">
+                    <h2>Plugins</h2>
+                    <h3 class="subheading">Change ScrollTo Plugin Options</h3>
+                    <ol>
+                        <li>Go to the js Folder</li>
+                        <li>Open plugins.js</li>
+                        <li>Find "ScrollTo Navigation"</li>
+                        <li>Change e.g. scrollSpeed, add new scrollButtons</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Change Responsive Nav Plugin Options</h3>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find "responsiveNav" (Bottom Scripts)</li>
+                        <li>Change e.g. transition speed</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                </section>
+
+                <section id="team" data-anchor="team">
+                    <h2>Team Section</h2>
+                    <h3 class="subheading">Change skill range</h3>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "team"</li>
+                        <li>Go to the skills div</li>
+                        <li>Find the data-width attribute e.g. "data-width="85"" (=85/100%)</li>
+                        <li>Change the number (0-100) to get the percentage</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+                </section>
+
+                <section id="gallery" data-anchor="gallery">
+                    <h2>Work Gallery</h2>
+                    <h3 class="subheading">Change gallery item data</h3>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "work"</li>
+                        <li>Go to the image you want to change</li>
+                        <li>Find the data-title attribute e.g. "data-title="GT40""</li>
+                        <li>Change the title</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Change gallery item description</h3>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "work"</li>
+                        <li>Go to the image you want to change</li>
+                        <li>Find the data-description attribute e.g. "data-description="Actually DIY VHS chillwave art party organic. Blog Brooklyn twee, Wes Anderson viral synth kogi next level butcher yr fixie umami lomo before they sold out.""</li>
+                        <li>Change the description</li>
+                        <li>Save the file after changing</li>
+                    </ol>
+
+                    <h3 class="subheading">Change filter &amp; filter items</h3>
+                    <ol>
+                        <li>Open index.html</li>
+                        <li>Find section "work"</li>
+                        <li>Go to the "gridfilter" ul</li>
+                        <li>Find the data-filter attribute e.g. "data-filter="all""</li>
+                        <li>Change the filter name</li>
+                        <li>Find ID "Grid"</li>
+                        <li><strong>Every Grid list item must have the class "mix" and a filter class name e.g. li class="mix webdesign". Items with the same filter class will be filtered together</strong></li>
+                        <li>Set you data filter and item class and save your file after changing</li>
+                        <li>Further Information on the mixitup Plugin Page: <strong><a href="http://mixitup.io/">Click here</a></strong></li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                &copy; 2013 - New York - One Page Portfolio &amp; Business Theme by 
+                <a href="http://www.rocketthemes.net" title="rocketthemes">rocketthemes</a>
+            </p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+
+        // Options
+        var scrollSpeed = 750;      // Speed of scrolling in ms
+        var topOffset = 30;         // Offset in px
+
+        // Scroll Buttons
+        var scrollButtons = $('.nav a, .galleryscroll');
+
+        // Functions
+        $(scrollButtons).on('click', function() {
+
+            var scrollAnchor = $(this).attr('data-scroll'),
+                scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - topOffset;
+
+            $('body, html').animate({
+                scrollTop: scrollPoint
+            }, scrollSpeed);
+
+            return false;
+
+        });
+
+        $(window).scroll(function() {
+            var windscroll = $(window).scrollTop();
+
+            if (windscroll >= 0 ) {
+                $('section').each(function(i) {
+                    if ($(this).position().top <= windscroll + 70) {
+                        $('.nav a.active').removeClass('active');
+                        $('.nav a').eq(i).addClass('active');
+                    }
+                });
+
+            } else {
+
+                $('.nav a.active').removeClass('active');
+                $('.nav a:first').addClass('active');
+            }
+
+        }).scroll();
+
+
+
+        </script>
+
+
+    </body>
+</html>
