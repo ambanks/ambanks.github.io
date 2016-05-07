@@ -127,9 +127,11 @@ h1, h2, h3, h4, h5, h6 {
 .welcome {
     text-align: center;
     width: 100%;
-    background: url("../img/1px-pattern.png"), url("../img/welcome-bg.jpg") center right no-repeat;
-    -webkit-background-size: 2px 2px, cover;
-    background-size: 2px 2px, cover;
+    height: 100%;
+    background: url("../img/welcome_header_option_3.jpg") no-repeat center;
+    -webkit-background-size: 2px 2px cover;
+    background-size: 2px 2px cover;
+
 }
 
 .welcome h2, .welcome h4 {
@@ -589,6 +591,20 @@ h1, h2, h3, h4, h5, h6 {
 /* ----- Team ----- */
 /* ---------------------------------------- */
 
+.download {
+    color: #00cac3 !important;
+    font-family: 'Lato', Calibri, Arial, sans-serif !important;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 18px !important;
+    background-color: white;
+    border: 2px solid #00cac3;
+    text-align: center;
+    text-decoration: none;
+    margin: 25px 2px;
+    cursor: pointer;
+}
+
 .about {
     width: 100%;
     max-width: 1280px;
@@ -637,6 +653,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 4rem;
 }
 
+
 .team a {
     color: black;
     font-family: 'entypo';
@@ -653,6 +670,8 @@ h1, h2, h3, h4, h5, h6 {
 .team a:hover {
     color: #00cac3;
 }
+
+
 
 /* ----- Skills ----- */
 
@@ -965,7 +984,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact {
     width: 100%;
     padding: 5% 0;
-    background: url("../img/1px-pattern.png"), url("../img/contact-bg.jpg") bottom center no-repeat;
+    background: url("../img/1px-pattern.png"), url("../img/atlanta-skyline-2.jpg") bottom center no-repeat;
     -webkit-background-size: 2px 2px, cover;
     background-size: 2px 2px, cover;
 }
