@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 .welcome {
     text-align: center;
     width: 100%;
-    background: url("../img/welcome_header_option_10.jpg") center right no-repeat;
+    background: url("../img/1px-pattern.png"), /*("../img/welcome_header_option_10.jpg")*/ center right no-repeat;
     /*-webkit-background-size: 2px 2px cover;*/
     background-size: cover;
 }
@@ -982,7 +982,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact {
     width: 100%;
     padding: 5% 0;
-    background: url("../img/1px-pattern.png"), url("../img/atlanta-skyline-2.jpg") bottom center no-repeat;
+    background: url("../img/1px-pattern.png"), url("../img/map-of-atlanta.jpg") bottom center no-repeat;
     -webkit-background-size: 2px 2px, cover;
     background-size: 2px 2px, cover;
 }
