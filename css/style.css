@@ -127,8 +127,8 @@ h1, h2, h3, h4, h5, h6 {
 .welcome {
     text-align: center;
     width: 100%;
-    background: url("../img/1px-pattern.png"), /*("../img/welcome_header_option_10.jpg")*/ center right no-repeat;
-    /*-webkit-background-size: 2px 2px cover;*/
+    background: url("../img/hero_image_1.jpg") center right no-repeat;
+    -webkit-background-size: 2px 2px cover;
     background-size: cover;
 }
 
@@ -609,6 +609,62 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+.modalDialog {
+    position: fixed;
+    overflow-y: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+   /* background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);*/
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+
+
 .team ul {
     width: 90%;
     margin: 0 auto;
@@ -651,6 +707,18 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 4rem;
 }
 
+
+.team .text-link {
+    font-size: 1.4rem;
+    font-size: 14px;
+    line-height: .8;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 700;
+} 
 
 .team a {
     color: black;
@@ -722,6 +790,18 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 0 100px;
 }
 
+.skills .skill-link {
+    font-size: 1.4rem;
+    font-size: 14px;
+    line-height: .8;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 700;
+}
+
 .fskills {
     text-align: center;
 }
@@ -785,9 +865,9 @@ h1, h2, h3, h4, h5, h6 {
 .ny-icon-effect .ny-icon {
     box-shadow: 0 0 0 4px #00cac3;
     overflow: hidden;
-    -webkit-transition: background 0.4s, color 0.4s, box-shadow 0.4s cubic-bezier(.21,.72,.62,1.24);
+   /* -webkit-transition: background 0.4s, color 0.4s, box-shadow 0.4s cubic-bezier(.21,.72,.62,1.24);
     -moz-transition: background 0.4s, color 0.4s, box-shadow 0.4s cubic-bezier(.21,.72,.62,1.24);
-    transition: background 0.4s, color 0.4s, box-shadow 0.4s cubic-bezier(.21,.72,.62,1.24);
+    transition: background 0.4s, color 0.4s, box-shadow 0.4s cubic-bezier(.21,.72,.62,1.24);*/
 }
 
 .ny-icon-effect .ny-icon:after {
@@ -797,13 +877,13 @@ h1, h2, h3, h4, h5, h6 {
 .ny-icon-effect .ny-icon:hover {
     background: #00cac3;
     color: #fff;
-    box-shadow: 0 0 0 5px white, 0 0 0 8px #00cac3;
+    /*box-shadow: 0 0 0 5px white, 0 0 0 8px #00cac3;*/
 }
 
 .ny-icon-effect .ny-icon:hover:before {
-    -webkit-animation: toRightFromLeft 0.3s forwards;
+    /*-webkit-animation: toRightFromLeft 0.3s forwards;
     -moz-animation: toRightFromLeft 0.3s forwards;
-    animation: toRightFromLeft 0.3s forwards;
+    animation: toRightFromLeft 0.3s forwards;*/
 }
 
 @-webkit-keyframes toRightFromLeft {
